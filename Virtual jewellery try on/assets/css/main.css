@@ -1,0 +1,148 @@
+
+.videobox {
+    margin-top: 50px;
+}
+
+body {
+    background-color: #ED5565;
+    font-family: system-ui, sans-serif;
+}
+
+#video1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.avatar {
+    border-radius: 50px;
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text {
+    color: aliceblue;
+}
+
+.eartable {
+    background-color: navajowhite;
+    width: 200px;
+    height: 400px;
+    display: inline-block;
+}
+
+.table {
+    background-color: navajowhite;
+    color: aqua;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.filter {
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+    background-color: #ff6a00;
+    width: 90px;
+    margin-left: 25px;
+    height: 90px;
+    border-radius: 50px;
+    cursor: pointer;
+    float: left;
+}
+
+.scroll > div {
+    justify-content: center;
+}
+
+.scroll {
+    margin-top: 800px;
+}
+
+.float {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 80px;
+    background-color: black;
+    color: #e4372a;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+
+#page {
+    display: none;
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("https://media.giphy.com/media/RgzryV9nRCMHPVVXPV/giphy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+}
